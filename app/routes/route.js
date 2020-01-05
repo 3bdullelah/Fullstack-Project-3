@@ -12,7 +12,7 @@ const checkToken = require("./checkToken");
 // 5. إعداد طرق مختلفة | setup the different routes (get, post, put, delete)
 
 route.get('/',(req, res) => {
-    res.send('welcome')
+    res.send("welcome To the Fullstack-Project-3");
 })
 
 route.use(teacher)

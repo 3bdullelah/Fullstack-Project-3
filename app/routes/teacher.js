@@ -22,8 +22,10 @@ route.post("/teachers/login", (req, res) => {
           const token = jwt.sign({ sub: teacher._id}, teacher.salt, {expiresIn: 60 * 60 * 24 * 7})
           res.send(token)
       }else {
-          res.status(401).send("Password is wrong")
+          res.status(401).send("Password is wrong!!")
       }
   })
-  .catch(() => res.send("No Teacher Found"))
+  .catch(() => res.send("No Teacher Found!!"))
 });
+
+module.exports = route;
