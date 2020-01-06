@@ -1,7 +1,7 @@
 // في هذا الملف ، قم بإعداد وحدة المستخدم (الطالب) الخاصة بك | in this file, set up your user module
 
 // 1. قم باستيراد مكتبة moongoose | import the mongoose library
-const { schema, model } = require("mongoose")
+const { Schema, model } = require("mongoose")
 // 2. قم بتحديد مخطط الطالب | start defining your user schema
 const StudentSchema = new Schema({
   name: String,

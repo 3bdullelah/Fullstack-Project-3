@@ -3,7 +3,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const routes = require("./routes");
+const routes = require("./routes/route");
 
 const mongoURI = "mongodb://localhost:27017/mongo-demo-db";
 
@@ -26,6 +26,6 @@ route.use(routes);
 
 // لا تنسى تحديد وظيفة الخادم | don't forget to define the server function that listens to requests
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 route.listen(port, () => console.log(`server is running on port ${port}`));
